@@ -16,10 +16,53 @@
 	  
 	  
 	  <body>
-	  
-	  
-	  
-	  </body>
+		  <div class="container">
+			<div class="row">
+			  <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+				<div class="card card-signin my-5">
+				  <div class="card-body">
+					<h3 class="card-title text-center">Login</h3>
+					<form class="form-signin">
+					  <div class="form-label-group">
+					  <br>
+					  <label for="username">Username</label>
+						<input type="text" id="username" class="form-control" placeholder="Username" required autofocus>
+					  </div>
+
+					  <br>
+					  <label for="password">Password</label>
+					  <div class="form-label-group">
+						<input type="password" id="password" class="form-control" placeholder="Password" required>
+					  </div>
+ 
+						<br>
+						
+					  <div class="custom-control custom-checkbox mb-3">
+						<input type="checkbox" class="custom-control-input" id="customCheck1">
+						<label class="custom-control-label" for="customCheck1">Remember password</label>
+					  </div>
+					  <button class="btn btn-lg btn-primary btn-block" onclick="logindetails();">Login</button>
+					  <hr class="my-4">
+					  </form>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  
+		<script type="text/javascript">
+       
+            function logindetails(){
+                var username;
+                var password;
+      
+                username = document.getElementById("username").value;
+                password = document.getElementById("password").value;
+              
+				alert(username + "  " + password + "  ");			  
+                }
+        </script>
+</body>
   
   
 </html>
